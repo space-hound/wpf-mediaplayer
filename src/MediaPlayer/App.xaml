@@ -1,0 +1,14 @@
+﻿<Application x:Class="MediaPlayer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/StyleVariables.xaml"/>
+                <ResourceDictionary Source="Styles/WindowStyle.xaml"/>
+                <ResourceDictionary Source="Styles/SliderStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

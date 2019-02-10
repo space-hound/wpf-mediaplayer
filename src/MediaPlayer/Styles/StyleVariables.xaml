@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:converters="clr-namespace:MediaPlayer.Converters">
+
+    <!-- WINDOWS SIZE IN PERCENTAGE RELATIVE TO PRIMARY SCREEN SIZE -->
+    <sys:Double x:Key="WindowWidth">0.3</sys:Double>
+    <sys:Double x:Key="WindowHeight">0.7</sys:Double>
+    <!-- WINDOWS POSITION IN PERCENTAGE RELATIVE TO PRIMARY SCREEN SIZE -->
+    <sys:Double x:Key="WindowTop">0.025</sys:Double>
+    <sys:Double x:Key="WindowLeft">0.025</sys:Double>
+
+    <!-- FONT SIZES (small, medium, large, extra-large) -->
+    <sys:Double x:Key="FontSM">14</sys:Double>
+    <sys:Double x:Key="FontM">16</sys:Double>
+    <sys:Double x:Key="FontLG">20</sys:Double>
+    <sys:Double x:Key="FontXL">24</sys:Double>
+
+    <!-- CONVERTERS DECLARATION AND INITIALIZATION -->
+    <converters:PercentConverter x:Key="PercentConverter"/>
+    <converters:TruncateConverter x:Key="TruncateConverter"/>
+
+
+
+</ResourceDictionary>

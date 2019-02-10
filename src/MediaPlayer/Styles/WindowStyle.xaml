@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="{x:Type Window}" x:Key="MainWindow">
+        <Setter Property="Title" Value="MediaPlayer"/>
+        <Setter Property="ResizeMode" Value="CanMinimize"/>
+        <Setter Property="Top" Value="{Binding Source={x:Static SystemParameters.PrimaryScreenHeight}, 
+            Converter={StaticResource PercentConverter}, ConverterParameter='{StaticResource WindowTop}'}"/>
+        <Setter Property="Left" Value="{Binding Source={x:Static SystemParameters.PrimaryScreenWidth}, 
+            Converter={StaticResource PercentConverter}, ConverterParameter='{StaticResource WindowLeft}'}"/>
+        <Setter Property="Width" Value="{Binding Source={x:Static SystemParameters.PrimaryScreenWidth}, 
+            Converter={StaticResource PercentConverter}, ConverterParameter='{StaticResource WindowWidth}'}"/>
+        <Setter Property="Height" Value="{Binding Source={x:Static SystemParameters.PrimaryScreenHeight}, 
+            Converter={StaticResource PercentConverter}, ConverterParameter='{StaticResource WindowHeight}'}"/>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="HDelimiter">
+        <Setter Property="Height" Value="2"/>
+        <Setter Property="Fill" Value="#333"/>
+        <Setter Property="Margin" Value="0"/>
+    </Style>
+    
+</ResourceDictionary>
